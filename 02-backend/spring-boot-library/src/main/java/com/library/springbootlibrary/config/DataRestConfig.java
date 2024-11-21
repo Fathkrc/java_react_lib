@@ -60,6 +60,7 @@ public class DataRestConfig implements RepositoryRestConfigurer {
     private void disableHttpMethods(Class theClass,
                                     RepositoryRestConfiguration config,
                                     HttpMethod[] unsportedActions){
+
         config.getExposureConfiguration()
                 .forDomainType(theClass)
                 .withItemExposure((metdata,httpMethods)-> httpMethods.

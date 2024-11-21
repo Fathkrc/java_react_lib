@@ -12,7 +12,7 @@ export const ReturnBook: React.FC<{ book: BookModel }> = (props) => {
                  height='233'
              />
                 :
-                <img src={require('./../../../Images/BooksImages/book-luv2code-1000.png')}
+                <img src={require('./../../../Images/BooksImages/dune.jpg')}
                 alt="book"
                 width='151'
                 height='233'

@@ -116,7 +116,7 @@ export const Loans = () => {
                                                 <img src={shelfCurrentLoan.book?.img} width='225' height='349'
                                                     alt='Book' />
                                                 :
-                                                <img src={require('./../../../Images/BooksImages/book-luv2code-1000.png')}
+                                                <img src={require('./../../../Images/BooksImages/dune.jpg')}
                                                     alt="Book"
                                                     width='225/'
                                                     height='349' />
@@ -200,7 +200,7 @@ export const Loans = () => {
                                             <img src={shelfCurrentLoan.book?.img} width='225' height='349'
                                                 alt='Book' />
                                             :
-                                            <img src={require('./../../../Images/BooksImages/book-luv2code-1000.png')}
+                                            <img src={require('./../../../Images/BooksImages/dune.jpg')}
                                                 alt="Book"
                                                 width='225/'
                                                 height='349' />

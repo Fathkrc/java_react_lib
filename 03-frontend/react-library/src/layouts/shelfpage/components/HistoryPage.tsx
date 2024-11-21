@@ -89,7 +89,7 @@ const HistoryPage = () => {
                                                 height='196'
                                                 alt="Book" />
                                             :
-                                            <img src={require('./../../.././Images/BooksImages/masmas.png')} alt="default"
+                                            <img src={require('./../../.././Images/BooksImages/dune.jpg')} alt="default"
                                                 width='123'
                                                 height='196' />
                                         }
@@ -102,7 +102,7 @@ const HistoryPage = () => {
                                                 height='196'
                                                 alt="Book" />
                                             :
-                                            <img src={require('./../../.././Images/BooksImages/masmas.png')} alt="default"
+                                            <img src={require('./../../.././Images/BooksImages/dune.jpg')} alt="default"
                                                 width='123'
                                                 height='196' />
                                         }

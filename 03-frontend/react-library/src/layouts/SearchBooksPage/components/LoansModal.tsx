@@ -38,7 +38,7 @@ export const LoansModal: React.FC<{
                                                 width='56'
                                                 height='87' />
                                             :
-                                            <img src={require("./../../../Images/BooksImages/masmas.png")} alt="Book"
+                                            <img src={require("./../../../Images/BooksImages/dune.jpg")} alt="Book"
                                                 width='56'
                                                 height='87' />
                                         }

@@ -271,7 +271,7 @@ return (
                         book?.img ?
                             <img src={book.img} width='226' height='349' alt="Book" />
                             :
-                            <img src={require('./../../Images/BooksImages/book-luv2code-1000.png')}
+                            <img src={require('./../../Images/BooksImages/dune.jpg')}
                                 width='226' height='349' alt="Book" />
                     }
                 </div>
@@ -308,7 +308,7 @@ return (
                     book?.img ?
                         <img src={book.img} width='226' height='349' alt="Book" />
                         :
-                        <img src={require('./../../Images/BooksImages/book-luv2code-1000.png')}
+                        <img src={require('./../../Images/BooksImages/dune.jpg')}
                             width='226' height='349' alt="Book" />
                 }
             </div>

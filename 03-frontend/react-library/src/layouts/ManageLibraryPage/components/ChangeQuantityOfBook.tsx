@@ -77,7 +77,7 @@ const ChangeQuantityOfBook: React.FC<{
                                 height='196'
                                 alt="Book" />
                             :
-                            <img src={require("./../../../Images/BooksImages/masmas.png")} alt="book"
+                            <img src={require("./../../../Images/BooksImages/dune.jpg")} alt="book"
                             width='123'
                             height='196'/>
                         }
@@ -89,7 +89,7 @@ const ChangeQuantityOfBook: React.FC<{
                                 height='196'
                                 alt="Book" />
                             :
-                            <img src={require("./../../../Images/BooksImages/masmas.png")}
+                            <img src={require("./../../../Images/BooksImages/dune.jpg")}
                                 alt="book"
                                 width='123'
                                 height='196'
