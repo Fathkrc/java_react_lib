@@ -15,14 +15,12 @@ public class DataRestConfig implements RepositoryRestConfigurer {
 
     private final String allowedOrigin="https://localhost:3000";
 
-
-
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors){
 
         HttpMethod[] theUnsportedActions={
                 HttpMethod.POST,
-                HttpMethod.DELETE,
+//                HttpMethod.DELETE,
                 HttpMethod.PUT,
                 HttpMethod.PATCH};
         // We are doing able to be reached our ids from front end
@@ -32,11 +30,13 @@ public class DataRestConfig implements RepositoryRestConfigurer {
                 exposeIdsFor(Review.class);
                 config
                 .exposeIdsFor(Message.class);
-        config
+                config
                 .exposeIdsFor(Payment.class);
+//                config
+//                .exposeIdsFor(User.class);
 
         // Restricting access to Http methods other than get mothods with our custom method
-        // BOOK.CLASS
+        // BOOK.CLAS
         disableHttpMethods(Book.class,
                 config,
                 theUnsportedActions);

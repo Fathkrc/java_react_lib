@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -21,18 +21,26 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-			<!-- OKTA  -->
+		<!-- OKTA  -->
 		<dependency>
 			<groupId>com.okta.spring</groupId>
 			<artifactId>okta-spring-boot-starter</artifactId>
 			<version>2.1.6</version>
 		</dependency>
-		<!--
-  For Maven, add the following dependency to your POM and replace with the
-  version number you want to use from:
-  - https://mvnrepository.com/artifact/com.stripe/stripe-java or
-  - https://github.com/stripe/stripe-java/releases/latest
--->
+<!--		  		TEST   				-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!--		  		STRIPE   				-->
+
 		<dependency>
 			<groupId>com.stripe</groupId>
 			<artifactId>stripe-java</artifactId>
@@ -43,7 +51,7 @@
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<!-- 		MYSQL 		-->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -55,7 +63,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-<!--		KOTLIN -->
+		<!--		KOTLIN -->
 		<!-- https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-common -->
 		<dependency>
 			<groupId>org.jetbrains.kotlin</groupId>
@@ -72,6 +80,7 @@
 			<artifactId>jackson-module-kotlin</artifactId>
 			<version>2.9.9</version>
 		</dependency>
+<!--		-->
 	</dependencies>
 
 	<build>

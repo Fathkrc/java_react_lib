@@ -17,6 +17,7 @@ public class Book {
 
     private String description;
 
+
     private int copies;
 
     private int copiesAvailable;

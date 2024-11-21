@@ -22,18 +22,18 @@ export const SearchBooksPage = () => {
     useEffect(() => {
         const fetchBook = async () => {
             const baseUrl: string = `${process.env.REACT_APP_API}/books`;
-
             let url: string = ``;
             if (searchUrl === '') {
                 url = `${baseUrl}?page=${currentPage - 1}&size=${booksPerPage}`;
+                console.log(url);
             }
             else {
                 let searchWithPage = searchUrl.replace('<pageNumber>', `${currentPage - 1}`);
                 url = baseUrl + searchWithPage;
+                console.log(url);
             }
 
             const response = await fetch(url);
-
             if (!response.ok) {
                 throw new Error('Something went wrong!');
             }
@@ -89,7 +89,7 @@ export const SearchBooksPage = () => {
             setSearchUrl('');
         }
         else {
-            setSearchUrl(`${process.env.REACT_APP_API}/search/findByTitleContaining?title=${search}&page=<pageNumber>&size=${booksPerPage}`);
+            setSearchUrl(`/search/findByTitleContaining?title=${search}&page=<pageNumber>&size=${booksPerPage}`);
         }
         setCategory('Book category');
     }

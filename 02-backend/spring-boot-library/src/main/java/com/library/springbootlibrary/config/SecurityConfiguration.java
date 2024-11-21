@@ -27,12 +27,13 @@ public class SecurityConfiguration {
         //  Protect endpoints at  /api/<type>/secure/**
 
         http.authorizeHttpRequests(auth->
-                auth
-                        .antMatchers("/api/books/secure/**",
-                                "/api/reviews/secure/**" ,
-                                "api/messages/secure/**",
-                                "api/admin/secure/**")
-                        .authenticated())
+                        auth
+//                                .antMatchers("/api/graphql").permitAll()
+                                .antMatchers("/api/books/secure/**",
+                                        "/api/reviews/secure/**" ,
+                                        "api/messages/secure/**",
+                                        "api/admin/secure/**")
+                                .authenticated())
                 .oauth2ResourceServer()
                 .jwt();
         //Protect endpoints at api/<type>/secure
@@ -47,8 +48,8 @@ public class SecurityConfiguration {
 
 
 
-return http.build();
-    }
+        return http.build();
 
 
+}
 }

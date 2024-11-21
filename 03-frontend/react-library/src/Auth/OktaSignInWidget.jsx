@@ -13,7 +13,7 @@ const OktaSignInWidget = ({ onSuccess, onError }) => {
         }
 
         const widget = new OktaSignIn(oktaconfig);
-
+        console.log(widget);
         widget.showSignInToGetTokens({
             el: widgetRef.current,
         }).then(onSuccess).catch(onError);
