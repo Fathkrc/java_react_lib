@@ -1,0 +1,15 @@
+#type Book {
+#    id: ID!
+#    title: String!
+#    author: String!
+#    description: String
+#    copies: Int
+#    copiesAvailable: Int
+#    category: String
+#    img: String
+#}
+#
+#type Query {
+#    books: [Book]
+#    book(id: ID!): Book
+#}
