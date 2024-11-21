@@ -12,7 +12,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
-./resources/*
+02-backend/spring-boot-library/src/main/resources/
 ### IntelliJ IDEA ###
 .idea
 *.iws
