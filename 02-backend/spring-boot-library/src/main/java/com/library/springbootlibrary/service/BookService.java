@@ -122,7 +122,7 @@ public List<ShelfCurrentLoansResponse> currentLoans(String userEmail) throws Exc
             Date d2=sdf.parse(LocalDate.now().toString());
 
             TimeUnit time=TimeUnit.DAYS;
-            Long difference_in_time=time.convert(d1.getTime()-d2.getTime(), TimeUnit.MILLISECONDS);
+            long difference_in_time=time.convert(d1.getTime()-d2.getTime(), TimeUnit.MILLISECONDS);
 
             loansList.add(new ShelfCurrentLoansResponse(b, difference_in_time));
 

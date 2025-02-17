@@ -24,10 +24,13 @@
 //    @MockBean
 //    private AdminService adminService;
 //
-//    @BeforeEach
-//    void setUp() {
-//        Mockito.mockStatic(ExtractJwt.class); // Mock static utility method
-//    }
+//    @Autowired
+//    private ExtractJwt extractJwt;
+//
+////    @BeforeEach
+////    void setUp() {
+////        Mockito.mockStatic(ExtractJwt.class); // Mock static utility method
+////    }
 //
 //    @Test
 //    void testPostBookWithValidAdminToken() throws Exception {
