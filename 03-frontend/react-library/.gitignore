@@ -9,7 +9,7 @@
 
 # production
 /build
-/ssl-localhost/
+./ssl-localhost/*
 ./lib/*
 
 # misc
