@@ -4,15 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
-/ssl-localhost
-.env
 # testing
 /coverage
 
 # production
 /build
-/ssl-localhost
+/ssl-localhost/
 ./lib/*
+
 # misc
 .DS_Store
 .env
